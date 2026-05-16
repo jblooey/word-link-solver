@@ -33,8 +33,16 @@ class WordLinkOverlay:
         self.root.title(self._TITLE)
         self.root.overrideredirect(True)
         self.root.attributes("-topmost", True)
-        self.root.wm_attributes("-transparent", True)
-        self.root.config(bg="systemTransparent")
+
+        # Transparency is macOS-specific and not supported on all Tk builds.
+        # Fall back to a black background if it fails.
+        try:
+            self.root.wm_attributes("-transparent", True)
+            self.root.config(bg="systemTransparent")
+            canvas_bg = "systemTransparent"
+        except Exception:
+            self.root.config(bg="black")
+            canvas_bg = "black"
 
         sw = self.root.winfo_screenwidth()
         sh = self.root.winfo_screenheight()
@@ -42,7 +50,7 @@ class WordLinkOverlay:
 
         self.canvas = tk.Canvas(
             self.root, width=sw, height=sh,
-            bg="systemTransparent", highlightthickness=0,
+            bg=canvas_bg, highlightthickness=0,
         )
         self.canvas.pack(fill="both", expand=True)
         self.root.update()
