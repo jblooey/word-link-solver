@@ -126,10 +126,34 @@ def main():
     print("Ready.\n")
     time.sleep(0.5)
 
-    overlay = WordLinkOverlay(cal)
-    # Get the Quartz window ID once so we can screenshot below our own overlay
-    # without hiding/showing it (which causes flicker).
-    wid = overlay.window_id()
+    import signal as _signal
+
+    def _sigint(signum, frame):
+        raise KeyboardInterrupt
+    _signal.signal(_signal.SIGINT, _sigint)
+
+    print("Starting overlay…")
+    overlay = None
+    wid = 0
+    try:
+        def _alarm(signum, frame):
+            raise TimeoutError("overlay timed out")
+        _signal.signal(_signal.SIGALRM, _alarm)
+        _signal.alarm(5)
+        overlay = WordLinkOverlay(cal)
+        _signal.alarm(0)
+        wid = overlay.window_id()
+        print("Overlay ready. Watching board…\n")
+    except TimeoutError:
+        _signal.alarm(0)
+        print("Overlay timed out — running in terminal-only mode.\n")
+        overlay = None
+        wid = 0
+    except Exception as e:
+        _signal.alarm(0)
+        print(f"Overlay failed ({e}) — running in terminal-only mode.\n")
+        overlay = None
+        wid = 0
 
     prev_letters: Optional[List[List[str]]] = None
     cached_words: List = []
@@ -138,6 +162,10 @@ def main():
     banned_words: set = set()   # removed this session; filtered from future solves
     # Rolling window of recent raw reads — board only confirmed when all agree
     recent: deque = deque(maxlen=STABILITY_NEEDED)
+
+    def _tick():
+        if overlay:
+            overlay.tick()
 
     def _check_stdin() -> None:
         """If Enter was pressed, remove the top word and show the next one."""
@@ -154,10 +182,12 @@ def main():
             cached_words = cached_words[1:]
             print(f"  ✗ Removed '{bad_word}'")
             if cached_words:
-                overlay.show(cached_words[0][0], cached_words[0][1])
+                if overlay:
+                    overlay.show(cached_words[0][0], cached_words[0][1])
                 _print_results(cur_letters, cur_dots, cached_words)
             else:
-                overlay.clear()
+                if overlay:
+                    overlay.clear()
                 _clear()
                 print(_render_board(cur_letters, cur_dots))
                 print("\n  No more words.")
@@ -171,7 +201,6 @@ def main():
 
             recent.append(letters)
 
-            # All STABILITY_NEEDED recent reads must agree before we act
             board_stable = (
                 len(recent) == STABILITY_NEEDED
                 and all(r == recent[0] for r in recent)
@@ -182,19 +211,19 @@ def main():
                 cur_letters  = letters
                 cur_dots     = dots
 
-                # Think briefly — keeps overlay showing last word while
-                # the board animation finishes.
                 deadline = time.time() + THINK_DELAY
                 while time.time() < deadline:
-                    overlay.tick()
+                    _tick()
                     time.sleep(0.05)
 
                 all_words    = find_all_words(letters, trie, dots)
                 cached_words = [w for w in all_words if w[0] not in banned_words]
                 if cached_words:
-                    overlay.show(cached_words[0][0], cached_words[0][1])
+                    if overlay:
+                        overlay.show(cached_words[0][0], cached_words[0][1])
                 else:
-                    overlay.clear()
+                    if overlay:
+                        overlay.clear()
 
                 _print_results(letters, dots, cached_words)
 
@@ -202,11 +231,12 @@ def main():
                 _check_stdin()
                 deadline = time.time() + POLL_DELAY
                 while time.time() < deadline:
-                    overlay.tick()
+                    _tick()
                     time.sleep(0.05)
 
     except KeyboardInterrupt:
-        overlay.close()
+        if overlay:
+            overlay.close()
         print("\n  Bye!")
 
 
