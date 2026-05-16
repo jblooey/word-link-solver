@@ -126,34 +126,37 @@ def main():
     print("Ready.\n")
     time.sleep(0.5)
 
-    import signal as _signal
-
-    def _sigint(signum, frame):
-        raise KeyboardInterrupt
-    _signal.signal(_signal.SIGINT, _sigint)
+    import subprocess
 
     print("Starting overlay…")
     overlay = None
     wid = 0
+
+    # Test tkinter in a throwaway subprocess with a hard 5-second timeout.
+    # If Tk hangs (common on some macOS Python builds), the subprocess is killed
+    # cleanly and we fall back to terminal-only mode — main process never blocks.
+    tk_ok = False
     try:
-        def _alarm(signum, frame):
-            raise TimeoutError("overlay timed out")
-        _signal.signal(_signal.SIGALRM, _alarm)
-        _signal.alarm(5)
-        overlay = WordLinkOverlay(cal)
-        _signal.alarm(0)
-        wid = overlay.window_id()
-        print("Overlay ready. Watching board…\n")
-    except TimeoutError:
-        _signal.alarm(0)
+        probe = subprocess.run(
+            [sys.executable, "-c",
+             "import tkinter; r = tkinter.Tk(); r.destroy(); print('ok')"],
+            timeout=5.0,
+            capture_output=True,
+            text=True,
+        )
+        tk_ok = probe.returncode == 0 and "ok" in probe.stdout
+    except subprocess.TimeoutExpired:
         print("Overlay timed out — running in terminal-only mode.\n")
-        overlay = None
-        wid = 0
-    except Exception as e:
-        _signal.alarm(0)
-        print(f"Overlay failed ({e}) — running in terminal-only mode.\n")
-        overlay = None
-        wid = 0
+    except Exception:
+        print("Overlay unavailable — running in terminal-only mode.\n")
+
+    if tk_ok:
+        try:
+            overlay = WordLinkOverlay(cal)
+            wid = overlay.window_id()
+            print("Overlay ready. Watching board…\n")
+        except Exception as e:
+            print(f"Overlay failed ({e}) — running in terminal-only mode.\n")
 
     prev_letters: Optional[List[List[str]]] = None
     cached_words: List = []
