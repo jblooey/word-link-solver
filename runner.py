@@ -126,31 +126,14 @@ def main():
     print("Ready.\n", flush=True)
     time.sleep(0.5)
 
-    import subprocess
-
-    print("Testing window system (up to 5 sec)…", flush=True)
-    overlay = None
+overlay = None
     wid = 0
+    no_overlay = "--no-overlay" in sys.argv
 
-    tk_ok = False
-    try:
-        probe = subprocess.run(
-            [sys.executable, "-c",
-             "import tkinter; r = tkinter.Tk(); r.destroy()"],
-            timeout=3.0,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-        )
-        tk_ok = probe.returncode == 0
-    except subprocess.TimeoutExpired:
-        print("Window system unavailable — running in terminal-only mode.\n", flush=True)
-    except Exception:
-        print("Window system unavailable — running in terminal-only mode.\n", flush=True)
-
-    if not tk_ok and overlay is None:
+    if no_overlay:
         print("Terminal-only mode. Watching board…\n", flush=True)
-
-    if tk_ok:
+    else:
+        print("Starting overlay…", flush=True)
         try:
             overlay = WordLinkOverlay(cal)
             wid = overlay.window_id()
