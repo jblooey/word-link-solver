@@ -1,0 +1,9 @@
+opencv-python
+numpy
+pillow
+pyautogui
+pytesseract
+pyobjc-framework-Cocoa
+pyobjc-framework-Vision
+pyobjc-framework-Quartz
+# also: brew install tesseract

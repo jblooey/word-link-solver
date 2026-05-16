@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+word_link_calibration.json
+Hover/
+debug_cells/
+*.DS_Store
