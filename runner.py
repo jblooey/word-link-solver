@@ -126,7 +126,7 @@ def main():
     print("Ready.\n", flush=True)
     time.sleep(0.5)
 
-overlay = None
+    overlay = None
     wid = 0
     no_overlay = "--no-overlay" in sys.argv
 
