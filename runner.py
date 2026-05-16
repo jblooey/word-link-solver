@@ -123,18 +123,15 @@ def main():
     words_set = load_word_set()
     print("Building trie…")
     trie = build_trie(words_set)
-    print("Ready.\n")
+    print("Ready.\n", flush=True)
     time.sleep(0.5)
 
     import subprocess
 
-    print("Starting overlay…")
+    print("Testing window system (up to 5 sec)…", flush=True)
     overlay = None
     wid = 0
 
-    # Test tkinter in a throwaway subprocess with a hard 5-second timeout.
-    # If Tk hangs (common on some macOS Python builds), the subprocess is killed
-    # cleanly and we fall back to terminal-only mode — main process never blocks.
     tk_ok = False
     try:
         probe = subprocess.run(
@@ -146,17 +143,20 @@ def main():
         )
         tk_ok = probe.returncode == 0 and "ok" in probe.stdout
     except subprocess.TimeoutExpired:
-        print("Overlay timed out — running in terminal-only mode.\n")
+        print("Window system unavailable — running in terminal-only mode.\n", flush=True)
     except Exception:
-        print("Overlay unavailable — running in terminal-only mode.\n")
+        print("Window system unavailable — running in terminal-only mode.\n", flush=True)
+
+    if not tk_ok and overlay is None:
+        print("Terminal-only mode. Watching board…\n", flush=True)
 
     if tk_ok:
         try:
             overlay = WordLinkOverlay(cal)
             wid = overlay.window_id()
-            print("Overlay ready. Watching board…\n")
+            print("Overlay ready. Watching board…\n", flush=True)
         except Exception as e:
-            print(f"Overlay failed ({e}) — running in terminal-only mode.\n")
+            print(f"Overlay failed ({e}) — running in terminal-only mode.\n", flush=True)
 
     prev_letters: Optional[List[List[str]]] = None
     cached_words: List = []
