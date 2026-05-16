@@ -136,12 +136,12 @@ def main():
     try:
         probe = subprocess.run(
             [sys.executable, "-c",
-             "import tkinter; r = tkinter.Tk(); r.destroy(); print('ok')"],
-            timeout=5.0,
-            capture_output=True,
-            text=True,
+             "import tkinter; r = tkinter.Tk(); r.destroy()"],
+            timeout=3.0,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
         )
-        tk_ok = probe.returncode == 0 and "ok" in probe.stdout
+        tk_ok = probe.returncode == 0
     except subprocess.TimeoutExpired:
         print("Window system unavailable — running in terminal-only mode.\n", flush=True)
     except Exception:
