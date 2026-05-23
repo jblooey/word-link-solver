@@ -908,7 +908,6 @@ ala
 alabaster
 alacrity
 alameda
-alamo
 alamos
 alan
 alanine
@@ -939,12 +938,10 @@ alcoholics
 alcoholism
 alcohols
 alcove
-aldehyde
 aldehydes
 alder
 alderman
 aldermen
-aldrin
 ale
 alec
 alert
@@ -993,7 +990,6 @@ alkaline
 alkalinity
 alkaloid
 alkaloids
-alkyl
 all
 allay
 allegation
@@ -1211,7 +1207,6 @@ amid
 amide
 amidst
 amie
-amiga
 amigo
 amigos
 amin
@@ -1432,7 +1427,6 @@ anisotropic
 anisotropy
 ankh
 ankle
-ankles
 anna
 annals
 annealing
@@ -1887,7 +1881,6 @@ areal
 areas
 arena
 arenas
-areola
 ares
 arf
 argent
@@ -2417,7 +2410,6 @@ aunty
 aura
 aural
 auras
-aureus
 aurora
 auroras
 auspices
@@ -2726,7 +2718,6 @@ bahadur
 baht
 bail
 bailed
-bailey
 baileys
 bailiff
 bailiffs
@@ -3406,7 +3397,6 @@ berry
 berserk
 berserker
 berth
-bertha
 berthing
 berths
 beryl
@@ -4932,7 +4922,6 @@ bursary
 burst
 bursting
 bursts
-burton
 bury
 burying
 bus
@@ -6223,7 +6212,6 @@ chinchilla
 chine
 chink
 chino
-chinook
 chinos
 chins
 chip
@@ -7116,7 +7104,6 @@ comer
 comers
 comes
 comet
-cometh
 comets
 comeuppance
 comfort
@@ -8235,7 +8222,6 @@ cork
 corker
 corks
 corkscrew
-corky
 cormorant
 corn
 cornbread
@@ -8358,7 +8344,6 @@ cost
 costal
 costar
 costed
-coster
 costing
 costliest
 costly
@@ -8922,7 +8907,6 @@ crying
 cryogenic
 crypt
 cryptic
-crypto
 cryptographic
 cryptography
 crypts
@@ -8993,7 +8977,6 @@ culturally
 culture
 cultured
 cultures
-culver
 culvert
 culverts
 cum
@@ -10394,7 +10377,6 @@ dick
 dicked
 dickens
 dickey
-dickie
 dicking
 dicks
 dicky
@@ -11740,7 +11722,6 @@ dunks
 dunning
 duns
 duo
-duomo
 duopoly
 duos
 dup
@@ -13917,7 +13898,6 @@ faun
 fauna
 faunal
 fava
-fave
 favela
 faves
 favor
@@ -14315,7 +14295,6 @@ finishing
 finite
 finitely
 fink
-fino
 fins
 fir
 fire
@@ -14554,7 +14533,6 @@ fleshed
 fleshy
 fletch
 fletcher
-fleury
 flew
 flex
 flexed
@@ -15030,7 +15008,6 @@ forwarding
 forwards
 foss
 fossa
-fosse
 fossil
 fossiliferous
 fossilised
@@ -15703,7 +15680,6 @@ gel
 gelatin
 gelatine
 gelatinous
-gelato
 gelding
 gelling
 gels
@@ -15761,7 +15737,6 @@ genetically
 geneticist
 geneticists
 genetics
-geneva
 genial
 genie
 genital
@@ -16103,7 +16078,6 @@ glycolysis
 glycoprotein
 glycoproteins
 glyph
-glyphs
 gnarled
 gnarly
 gnashing
@@ -16406,7 +16380,6 @@ grates
 gratification
 gratified
 gratifying
-gratin
 grating
 gratings
 gratis
@@ -16449,7 +16422,6 @@ greatest
 greatly
 greatness
 greats
-greaves
 greed
 greedily
 greedy
@@ -16680,7 +16652,6 @@ guesswork
 guest
 guesthouse
 guests
-guff
 guidance
 guide
 guidebook
@@ -16767,7 +16738,6 @@ gut
 gutless
 guts
 gutsy
-gutta
 gutted
 gutter
 gutters
@@ -16864,7 +16834,6 @@ halfpenny
 halftime
 halfway
 halibut
-halide
 halides
 hall
 hallelujah
@@ -17184,7 +17153,6 @@ hawthorn
 hay
 hays
 haystack
-hayward
 haywire
 hazard
 hazardous
@@ -17283,7 +17251,6 @@ heartbreakers
 heartbreaking
 heartbroken
 heartburn
-hearted
 heartening
 heartfelt
 hearth
@@ -17349,7 +17316,6 @@ heft
 hefty
 hegemonic
 hegemony
-heh
 heifer
 heifers
 height
@@ -17773,7 +17739,6 @@ holocaust
 hologram
 holograms
 holographic
-holotype
 holstein
 holster
 holsters
@@ -17901,7 +17866,6 @@ hooligan
 hooliganism
 hooligans
 hoop
-hooper
 hoopla
 hoops
 hooray
@@ -18069,8 +18033,6 @@ howling
 howls
 hows
 hoy
-hoya
-hoyle
 hub
 hubbub
 hubby
@@ -18156,7 +18118,6 @@ humping
 humps
 hums
 humus
-humvee
 hun
 hunch
 hunchback
@@ -19104,7 +19065,6 @@ infamously
 infamy
 infancy
 infant
-infante
 infanticide
 infantile
 infantry
@@ -20443,7 +20403,6 @@ kalam
 kale
 kaleidoscope
 kaleidoscopic
-kamala
 kamikaze
 kane
 kangaroo
@@ -20495,7 +20454,6 @@ keepsake
 keg
 kegs
 keir
-kelly
 kelp
 kelvin
 kemp
@@ -20592,7 +20550,6 @@ kilowatts
 kilt
 kilter
 kilts
-kimchi
 kimono
 kin
 kinase
@@ -20822,7 +20779,6 @@ lagging
 lagoon
 lagoons
 lags
-laguna
 laid
 lain
 lair
@@ -20991,7 +20947,6 @@ latex
 lathe
 lather
 lathes
-latino
 latinos
 latitude
 latitudes
@@ -21321,7 +21276,6 @@ leucine
 leukaemia
 leukemia
 lev
-levant
 levee
 levees
 level
@@ -21351,7 +21305,6 @@ lewis
 lex
 lexical
 lexicon
-lexis
 ley
 liabilities
 liability
@@ -21850,7 +21803,6 @@ looking
 lookout
 lookouts
 looks
-lookup
 loom
 loomed
 looming
@@ -21862,7 +21814,6 @@ loons
 loony
 loop
 looped
-looper
 loophole
 loopholes
 looping
@@ -21923,7 +21874,6 @@ loudness
 loudspeaker
 loudspeakers
 lough
-louie
 louis
 lounge
 lounges
@@ -22164,7 +22114,6 @@ madras
 madre
 madrigal
 mads
-maduro
 mae
 maelstrom
 maestro
@@ -22285,7 +22234,6 @@ makeshift
 makeup
 making
 makings
-mako
 malacca
 malachite
 maladaptive
@@ -22316,7 +22264,6 @@ malignancies
 malignancy
 malignant
 maligned
-malkin
 mall
 mallard
 malleable
@@ -22601,7 +22548,6 @@ mart
 marten
 martens
 martial
-martian
 martians
 martin
 martini
@@ -22789,7 +22735,6 @@ maximum
 maxis
 maxwell
 may
-mayan
 maybe
 mayday
 mayflower
@@ -23807,8 +23752,6 @@ moneys
 monger
 mongering
 mongers
-mongo
-mongol
 mongoloid
 mongols
 mongoose
@@ -23868,10 +23811,8 @@ monstrosity
 monstrous
 montage
 montages
-montane
 monte
 monteith
-montero
 montes
 month
 monthly
@@ -23954,7 +23895,6 @@ morphologically
 morphology
 morphs
 morris
-morro
 morrow
 morse
 morsel
@@ -24041,7 +23981,6 @@ motorist
 motorists
 motorized
 motors
-motorway
 motorways
 mots
 mott
@@ -24326,7 +24265,6 @@ mutually
 muzzle
 mycelium
 mycobacterium
-myelin
 myeloid
 myeloma
 myocardial
@@ -24373,7 +24311,6 @@ nail
 nailed
 nailing
 nails
-naira
 naive
 naively
 naivete
@@ -24820,7 +24757,6 @@ nitrate
 nitrates
 nitric
 nitride
-nitrile
 nitrite
 nitro
 nitrogen
@@ -24992,7 +24928,6 @@ note
 notebook
 notebooks
 noted
-notepad
 notes
 noteworthy
 nother
@@ -25471,7 +25406,6 @@ onwards
 onyx
 oodles
 ooh
-oolong
 oomph
 oops
 oot
@@ -25740,7 +25674,6 @@ orthopaedic
 orthopaedics
 orthopedic
 orthopedics
-oryx
 oscillate
 oscillating
 oscillation
@@ -26313,7 +26246,6 @@ pandemonium
 pander
 pandering
 pandit
-pandora
 pane
 panel
 paneled
@@ -26700,7 +26632,6 @@ pattern
 patterned
 patterning
 patterns
-pattie
 patties
 patting
 patty
@@ -26723,7 +26654,6 @@ pavlova
 paw
 pawn
 pawned
-pawnee
 pawns
 paws
 pax
@@ -26919,7 +26849,6 @@ pennant
 pennants
 penne
 penned
-penner
 pennies
 penniless
 pennines
@@ -26952,7 +26881,6 @@ pepperoni
 peppers
 peppery
 peppy
-peptide
 peptides
 per
 perceive
@@ -27083,8 +27011,6 @@ perpetuation
 perpetuity
 perplexed
 perplexing
-perron
-perry
 persecute
 persecuted
 persecuting
@@ -27565,7 +27491,6 @@ pitied
 pitiful
 pitifully
 pitiless
-pitman
 pits
 pittance
 pitted
@@ -27846,7 +27771,6 @@ pocketing
 pockets
 poco
 pod
-podesta
 podium
 podiums
 pods
@@ -27866,7 +27790,6 @@ poi
 poignancy
 poignant
 point
-pointe
 pointed
 pointedly
 pointer
@@ -28009,7 +27932,6 @@ pompadour
 pompano
 pompous
 poms
-ponce
 poncho
 pond
 ponder
@@ -28496,7 +28418,6 @@ preoccupation
 preoccupations
 preoccupied
 preoperative
-preorder
 preordered
 preorders
 prep
@@ -29207,7 +29128,6 @@ pry
 prying
 psalm
 psalms
-psalter
 pseudo
 pseudomonas
 pseudonym
@@ -29302,7 +29222,6 @@ puffins
 puffs
 puffy
 pug
-pugh
 pugs
 puja
 puke
@@ -29684,7 +29603,6 @@ quiz
 quizzed
 quizzes
 quizzing
-quod
 quorum
 quota
 quotable
@@ -30024,8 +29942,6 @@ ravishing
 raw
 rawhide
 ray
-raya
-rayed
 rayon
 rays
 raze
@@ -30597,7 +30513,6 @@ refrain
 refrained
 refraining
 refrains
-reframe
 reframing
 refresh
 refreshed
@@ -32494,7 +32409,6 @@ sandy
 sane
 sang
 sanger
-sangh
 sangria
 sanguine
 sanitarium
@@ -33642,7 +33556,6 @@ sherpa
 sherpas
 sherry
 shes
-shetland
 shew
 shh
 shied
@@ -34290,7 +34203,6 @@ skyrocketing
 skyscraper
 skyscrapers
 skyward
-skyway
 slab
 slabs
 slack
@@ -34786,7 +34698,6 @@ soda
 sodas
 sodden
 sodium
-sodom
 sodomy
 sofa
 sofas
@@ -35203,7 +35114,6 @@ speeded
 speedier
 speedily
 speeding
-speedo
 speedometer
 speeds
 speedster
@@ -35699,7 +35609,6 @@ starred
 starring
 starry
 stars
-starship
 starships
 starstruck
 start
@@ -36499,7 +36408,6 @@ subtraction
 subtropical
 subtype
 subtypes
-subunit
 subunits
 suburb
 suburban
@@ -37082,7 +36990,6 @@ swum
 swung
 sycamore
 sycophants
-sykes
 syllabic
 syllable
 syllables
@@ -37253,7 +37160,6 @@ tag
 tagged
 tagging
 tags
-tahini
 taiga
 tail
 tailback
@@ -37533,7 +37439,6 @@ teaspoon
 teaspoons
 teat
 teatime
-techies
 technic
 technical
 technicalities
@@ -37689,7 +37594,6 @@ tenements
 tenet
 tenets
 tenfold
-tenner
 tennis
 tenor
 tenors
@@ -37715,7 +37619,6 @@ tenured
 tenures
 tepid
 tequila
-teriyaki
 term
 termed
 terminal
@@ -38300,7 +38203,6 @@ toboggan
 toby
 tod
 today
-todays
 toddler
 toddlers
 toddy
@@ -38406,7 +38308,6 @@ toothpicks
 toothy
 tooting
 toots
-tootsie
 top
 topaz
 topiary
@@ -38993,7 +38894,6 @@ tripods
 tripoli
 tripped
 tripping
-trippy
 trips
 triptych
 trite
@@ -40468,7 +40368,6 @@ varna
 varnish
 varnished
 varsity
-varus
 vary
 varying
 vas
@@ -40914,7 +40813,6 @@ volley
 volleyball
 volleys
 volt
-volta
 voltage
 voltages
 volts
@@ -41158,7 +41056,6 @@ warring
 warrior
 warriors
 wars
-warsaw
 warship
 warships
 wart
